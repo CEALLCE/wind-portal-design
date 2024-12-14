@@ -37,7 +37,7 @@ const Navbar = () => {
             </div>
             <Button 
               variant="outline" 
-              className="text-white border-white hover:bg-wind-secondary hover:text-white hover:border-wind-secondary transition-colors"
+              className="text-wind-primary border-white hover:bg-wind-secondary hover:text-white hover:border-wind-secondary transition-colors"
             >
               Login
             </Button>
