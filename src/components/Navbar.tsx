@@ -1,8 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
+import { UserRound } from "lucide-react";
 
 const Navbar = () => {
   const location = useLocation();
+  const currentUser = null; // This would be replaced with actual user data when authentication is implemented
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-wind-primary shadow-lg">
@@ -29,6 +31,10 @@ const Navbar = () => {
             >
               News
             </Link>
+            <div className="flex items-center gap-2 text-white">
+              <UserRound className="h-6 w-6" />
+              <span>{currentUser?.name || "Гость"}</span>
+            </div>
             <Button 
               variant="outline" 
               className="text-white border-white hover:bg-wind-secondary hover:text-white hover:border-wind-secondary transition-colors"
