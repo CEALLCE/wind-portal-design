@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const Index = () => {
   return (
@@ -53,6 +54,39 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contacts Section */}
+      <section id="contacts" className="py-20 bg-wind-light">
+        <div className="container">
+          <h2 className="text-4xl font-bold text-wind-primary text-center mb-16">Contact Us</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center">
+              <MapPin className="w-12 h-12 text-wind-secondary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Our Address</h3>
+              <p className="text-wind-gray text-center">
+                123 Business Street<br />
+                Moscow, Russia 123456
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center">
+              <Phone className="w-12 h-12 text-wind-secondary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Phone</h3>
+              <p className="text-wind-gray">
+                +7 (999) 123-45-67<br />
+                +7 (999) 765-43-21
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center">
+              <Mail className="w-12 h-12 text-wind-secondary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Email</h3>
+              <p className="text-wind-gray">
+                info@wind.com<br />
+                support@wind.com
+              </p>
+            </div>
           </div>
         </div>
       </section>
